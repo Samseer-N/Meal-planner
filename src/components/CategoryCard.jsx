@@ -76,4 +76,5 @@ function CategoryCard() {
     </div>
   );
 }
+
 export default CategoryCard;
