@@ -8,7 +8,7 @@ function CategoryCard() {
     {
       id: 2,
       name: "Lunch",
-      image: "https://via.placeholder.com/150"
+      image: "lunch.jpg"
     },
     {
       id: 3,
