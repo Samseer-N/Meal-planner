@@ -98,5 +98,4 @@ function FavoriteCard() {
     </>
   );
 }
-
 export default FavoriteCard;
