@@ -1,19 +1,20 @@
+import biriyani from "D:\biriyani.webp"
 function FavoriteCard() {
   const favoriteMeals = [
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "D:\biriyani.webp",
+      image: "biriyani.web",
     },
     {
       id: 2,
       name: "Paneer Butter Masala",
-      image: "D:\paneer butter.webp",
+      image: "paneer butter.webp",
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "D:\choclate cake.webp",
+      image: "choclate cake.webp",
     },
   ];
 
