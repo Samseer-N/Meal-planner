@@ -66,7 +66,7 @@ function MealDetails() {
   return (
     <div style={styles.container}>
       <img
-        src={meal.image}
+        src={meal.imges1}
         alt={meal.name}
         style={styles.image}
       />
