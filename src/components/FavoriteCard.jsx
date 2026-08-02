@@ -46,6 +46,8 @@ function FavoriteCard() {
       fontWeight: "bold",
       margin: "15px 0",
     },
+  return <h2>FavoriteCard samseer</h2>;
+}
 
     button: {
       backgroundColor: "#dc3545",
