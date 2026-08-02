@@ -55,7 +55,7 @@ function CategoryCard() {
   };
 
   return (
-        <div style={styles.container}>
+    <div style={styles.container}>
       {categories.map((category) => (
         <div
           key={category.id}
@@ -75,4 +75,6 @@ function CategoryCard() {
       ))}
     </div>
   );
+}
+
 export default CategoryCard;
