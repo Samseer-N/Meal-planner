@@ -1,3 +1,4 @@
+
 function Footer() {
   const styles = {
     footer: {
