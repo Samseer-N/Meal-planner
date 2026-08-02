@@ -3,17 +3,17 @@ function FavoriteCard() {
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "https://via.placeholder.com/250",
+      image: "D:\biriyani.webp",
     },
     {
       id: 2,
       name: "Paneer Butter Masala",
-      image: "https://via.placeholder.com/250",
+      image: "D:\paneer butter.webp",
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "https://via.placeholder.com/250",
+      image: "D:\choclate cake.webp",
     },
   ];
 
