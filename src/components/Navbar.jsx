@@ -1,5 +1,6 @@
 function Navbar() {
-  return <h2>120</h2>;
+  return <h2>120 partha
+  </h2>;
 }
 
 export default Navbar;
