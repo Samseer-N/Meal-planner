@@ -1,4 +1,3 @@
-import biriyani from "D:\biriyani.webp"
 function FavoriteCard() {
   const favoriteMeals = [
     {
