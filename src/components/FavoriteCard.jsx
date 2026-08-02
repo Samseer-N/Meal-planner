@@ -1,5 +1,5 @@
 function FavoriteCard() {
-  const favoriteMeals = [
+  const favoriteMeals= [
     {
       id: 1,
       name: "Chicken Biryani",
