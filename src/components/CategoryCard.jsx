@@ -1,5 +1,5 @@
 function CategoryCard() {
-  return <h2>CategoryCard</h2>;
+  return <h2>CategoryCard 105</h2>;
 }
 
 export default CategoryCard;
