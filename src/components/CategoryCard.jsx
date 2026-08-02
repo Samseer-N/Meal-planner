@@ -3,7 +3,7 @@ function CategoryCard() {
     {
       id: 1,
       name: "Breakfast",
-      image: "https://via.placeholder.com/150"
+      image: "breakfast.jpg"
     },
     {
       id: 2,
@@ -13,12 +13,12 @@ function CategoryCard() {
     {
       id: 3,
       name: "Dinner",
-      image: "https://via.placeholder.com/150"
+      image: "dinner.jpg"
     },
     {
       id: 4,
       name: "Dessert",
-      image: "https://via.placeholder.com/150"
+      image: "desert.jpg"
     }
   ];
 
