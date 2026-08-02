@@ -4,17 +4,17 @@ function FavoriteCard() {
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "biriyani.web",
+      image: "biriyan",
     },
     {
       id: 2,
       name: "Paneer Butter Masala",
-      image: "paneer butter.webp",
+      image: "paneer",
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "choclate cake.webp",
+      image: "choclate",
     },
   ];
 
