@@ -1,5 +1,5 @@
-function Footer() {
-  return <h2>Footer</h2>;
+function Footer() { 
+  return <h2> pranesh Footer</h2>;
 }
 
 export default Footer;
