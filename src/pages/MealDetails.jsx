@@ -3,7 +3,7 @@ function MealDetails() {
     name: "Chicken Biryani",
     category: "Main Course",
     area: "Indian",
-    image: "https://via.placeholder.com/500",
+    image: "images.jpg",
     ingredients: [
       "Chicken",
       "Rice",
@@ -66,7 +66,7 @@ function MealDetails() {
   return (
     <div style={styles.container}>
       <img
-        src={meal.imges1}
+        src={meal.image}
         alt={meal.name}
         style={styles.image}
       />
