@@ -3,19 +3,19 @@ function RecipeCard() {
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "https://via.placeholder.com/250",
+      image: "biriyan.jpg",
       category: "Main Course",
     },
     {
       id: 2,
       name: "Veg Pizza",
-      image: "https://via.placeholder.com/250",
+      image: "vegpiza",
       category: "Fast Food",
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "https://via.placeholder.com/250",
+      image: "chocolate.jpg",
       category: "Dessert",
     },
   ];
