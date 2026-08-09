@@ -1,5 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
+import breakfast from "./breakfast.jpg";
+import lunch from "./lunch.jpg";
+import dinner from "./dinner.jpg";
+import desert from "./desert.jpg";
+
 function CategoryCard() {
   const navigate = useNavigate();
 
@@ -7,22 +12,22 @@ function CategoryCard() {
     {
       id: 1,
       name: "Breakfast",
-      image: "breakfast.jpg",
+      image: breakfast,
     },
     {
       id: 2,
       name: "Lunch",
-      image: "lunch.jpg",
+      image: lunch,
     },
     {
       id: 3,
       name: "Dinner",
-      image: "dinner.jpg",
+      image: dinner,
     },
     {
       id: 4,
       name: "Dessert",
-      image: "desert.jpg",
+      image: desert,
     },
   ];
 
@@ -65,7 +70,7 @@ function CategoryCard() {
     } else if (category === "Lunch") {
       navigate("/meal/1");
     } else if (category === "Dinner") {
-      navigate("/meal/1");
+      navigate("/meal/2");
     } else if (category === "Dessert") {
       navigate("/meal/3");
     }
