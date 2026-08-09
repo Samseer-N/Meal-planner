@@ -1,21 +1,25 @@
+import biriyan from "./biriyan.jpg";
+import vegpiza from "./vegpiza.jpg";
+import chocolate from "./chocolate.jpg";
+
 function RecipeCard() {
   const recipes = [
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "biriyan.jpg",
+      image: biriyan,
       category: "Main Course",
     },
     {
       id: 2,
       name: "Veg Pizza",
-      image: "vegpiza",
+      image: vegpiza,
       category: "Fast Food",
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "chocolate.jpg",
+      image: chocolate,
       category: "Dessert",
     },
   ];
@@ -36,6 +40,7 @@ function RecipeCard() {
       overflow: "hidden",
       boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
       textAlign: "center",
+      backgroundColor: "#fff",
     },
 
     image: {
