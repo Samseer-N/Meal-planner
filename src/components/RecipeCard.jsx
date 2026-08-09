@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 import biriyan from "./biriyan.jpg";
 import vegpiza from "./vegpiza.jpg";
 import chocolate from "./chocolate.jpg";
 
 function RecipeCard() {
+  const navigate = useNavigate();
+
   const recipes = [
     {
       id: 1,
@@ -87,7 +91,7 @@ function RecipeCard() {
 
           <button
             style={styles.button}
-            onClick={() => alert(recipe.name)}
+            onClick={() => navigate(`/meal/${recipe.id}`)}
           >
             View Recipe
           </button>
