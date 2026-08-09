@@ -1,19 +1,23 @@
+import biriyan from "./biriyan.jpg";
+import paneer from "./paneer.jpg";
+import choclate from "./choclate.jpg";
+
 function FavoriteCard() {
-  const favoriteMeals= [
+  const favoriteMeals = [
     {
       id: 1,
       name: "Chicken Biryani",
-      image: "biriyan",
+      image: biriyan,
     },
     {
       id: 2,
       name: "Paneer Butter Masala",
-      image: "paneer",
+      image: paneer,
     },
     {
       id: 3,
       name: "Chocolate Cake",
-      image: "choclate",
+      image: choclate,
     },
   ];
 
@@ -33,6 +37,7 @@ function FavoriteCard() {
       overflow: "hidden",
       textAlign: "center",
       boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+      backgroundColor: "#fff",
     },
 
     image: {
@@ -46,8 +51,6 @@ function FavoriteCard() {
       fontWeight: "bold",
       margin: "15px 0",
     },
-  return <h2>FavoriteCard samseer</h2>;
-}
 
     button: {
       backgroundColor: "#dc3545",
@@ -70,9 +73,7 @@ function FavoriteCard() {
   return (
     <>
       {favoriteMeals.length === 0 ? (
-        <h2 style={styles.emptyMessage}>
-          No Favorite Meals Added
-        </h2>
+        <p style={styles.emptyMessage}>No Favorite Meals Added</p>
       ) : (
         <div style={styles.container}>
           {favoriteMeals.map((meal) => (
@@ -83,9 +84,7 @@ function FavoriteCard() {
                 style={styles.image}
               />
 
-              <h3 style={styles.title}>
-                {meal.name}
-              </h3>
+              <h3 style={styles.title}>{meal.name}</h3>
 
               <button
                 style={styles.button}
@@ -100,4 +99,5 @@ function FavoriteCard() {
     </>
   );
 }
+
 export default FavoriteCard;
