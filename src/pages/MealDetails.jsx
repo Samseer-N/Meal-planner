@@ -43,7 +43,7 @@ function MealDetails() {
       ],
       instructions:
         "Prepare the pizza dough. Spread tomato sauce over the dough. Add mozzarella cheese and vegetables. Sprinkle Italian herbs. Bake until the cheese melts and the crust becomes golden brown. Serve hot.",
-      youtube: "https://www.youtube.com/",
+      youtube: "https://youtu.be/kSb62MGJSI4?si=MsxJ5myNbWl2nZDd",
     },
 
     3: {
@@ -63,7 +63,7 @@ function MealDetails() {
       ],
       instructions:
         "Mix flour, cocoa powder, sugar, and baking powder. Add eggs, milk, butter, and vanilla extract. Mix until smooth. Pour the batter into a cake pan and bake until fully cooked. Allow it to cool and serve.",
-      youtube: "https://www.youtube.com/",
+      youtube: "https://youtu.be/mrCV7eO7k2w?si=RpjJ6tgqZL6EN1nY",
     },
   };
 
