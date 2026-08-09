@@ -1,6 +1,6 @@
 import biriyan from "./biriyan.jpg";
 import paneer from "./paneer.jpg";
-import choclate from "./choclate.jpg";
+import choclate from "./chocolate.jpg";
 
 function FavoriteCard() {
   const favoriteMeals = [
