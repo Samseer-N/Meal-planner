@@ -1,50 +1,59 @@
-import Navbar from "../components/Navbar";
-import SearchBar from "../components/SearchBar";
-import CategoryCard from "../components/CategoryCard";
-import RecipeCard from "../components/RecipeCard";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
-function Home() {
+function Navbar() {
   const styles = {
-    page: {
-      minHeight: "100vh",
-      backgroundColor: "#f8f9fa",
-      fontFamily: "Arial, sans-serif",
+    navbar: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      backgroundColor: "#ff6b35",
+      padding: "15px 30px",
+      color: "white",
+      flexWrap: "wrap",
     },
 
-    heading: {
-      textAlign: "center",
-      color: "#ff6b35",
-      marginTop: "20px",
-      fontSize: "32px",
+    logo: {
+      fontSize: "24px",
+      fontWeight: "bold",
     },
 
-    subtitle: {
-      textAlign: "center",
-      color: "#555",
-      marginBottom: "30px",
+    navLinks: {
+      display: "flex",
+      listStyle: "none",
+      gap: "25px",
+      margin: 0,
+      padding: 0,
+    },
+
+    link: {
+      color: "white",
+      textDecoration: "none",
+      fontSize: "18px",
+      fontWeight: "500",
     },
   };
 
   return (
-    <div style={styles.page}>
-      <Navbar />
+    <nav style={styles.navbar}>
+      <div style={styles.logo}>
+        🍽️ Meal Planner
+      </div>
 
-      <h1 style={styles.heading}>Meal Planner</h1>
+      <ul style={styles.navLinks}>
+        <li>
+          <Link to="/" style={styles.link}>
+            Home
+          </Link>
+        </li>
 
-      <p style={styles.subtitle}>
-        Discover delicious meals and plan your day!
-      </p>
-
-      <SearchBar />
-
-      <CategoryCard />
-
-      <RecipeCard />
-
-      <Footer />
-    </div>
+        <li>
+          <Link to="/favorites" style={styles.link}>
+            Favorites
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
-export default Home;
+export default Navbar;
