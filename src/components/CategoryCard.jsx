@@ -1,29 +1,28 @@
-import breakfast from "./breakfast.jpg";
-import lunch from "./lunch.jpg";
-import dinner from "./dinner.jpg";
-import desert from "./desert.jpg";
+import { useNavigate } from "react-router-dom";
 
 function CategoryCard() {
+  const navigate = useNavigate();
+
   const categories = [
     {
       id: 1,
       name: "Breakfast",
-      image: breakfast,
+      image: "breakfast.jpg",
     },
     {
       id: 2,
       name: "Lunch",
-      image: lunch,
+      image: "lunch.jpg",
     },
     {
       id: 3,
       name: "Dinner",
-      image: dinner,
+      image: "dinner.jpg",
     },
     {
       id: 4,
       name: "Dessert",
-      image: desert,
+      image: "desert.jpg",
     },
   ];
 
@@ -44,7 +43,7 @@ function CategoryCard() {
       textAlign: "center",
       boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
       cursor: "pointer",
-      backgroundColor: "#fff",
+      backgroundColor: "white",
     },
 
     image: {
@@ -60,13 +59,25 @@ function CategoryCard() {
     },
   };
 
+  const handleCategoryClick = (category) => {
+    if (category === "Breakfast") {
+      navigate("/meal/1");
+    } else if (category === "Lunch") {
+      navigate("/meal/1");
+    } else if (category === "Dinner") {
+      navigate("/meal/1");
+    } else if (category === "Dessert") {
+      navigate("/meal/3");
+    }
+  };
+
   return (
     <div style={styles.container}>
       {categories.map((category) => (
         <div
           key={category.id}
           style={styles.card}
-          onClick={() => alert(category.name)}
+          onClick={() => handleCategoryClick(category.name)}
         >
           <img
             src={category.image}

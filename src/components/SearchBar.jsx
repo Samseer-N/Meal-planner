@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function SearchBar() {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   const styles = {
     container: {
@@ -35,12 +37,31 @@ function SearchBar() {
   };
 
   const handleSearch = () => {
-    if (search.trim() === "") {
+    const searchText = search.trim().toLowerCase();
+
+    if (searchText === "") {
       alert("Please enter a meal name.");
       return;
     }
 
-    alert(`Searching for: ${search}`);
+    if (
+      searchText.includes("biryani") ||
+      searchText.includes("chicken")
+    ) {
+      navigate("/meal/1");
+    } else if (
+      searchText.includes("pizza") ||
+      searchText.includes("veg")
+    ) {
+      navigate("/meal/2");
+    } else if (
+      searchText.includes("cake") ||
+      searchText.includes("chocolate")
+    ) {
+      navigate("/meal/3");
+    } else {
+      alert("Recipe not found. Try Biryani, Pizza, or Chocolate Cake.");
+    }
   };
 
   return (
@@ -51,9 +72,17 @@ function SearchBar() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         style={styles.input}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleSearch();
+          }
+        }}
       />
 
-      <button style={styles.button} onClick={handleSearch}>
+      <button
+        style={styles.button}
+        onClick={handleSearch}
+      >
         Search
       </button>
     </div>
