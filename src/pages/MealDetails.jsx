@@ -1,9 +1,11 @@
+import images from "./images.jpg";
+
 function MealDetails() {
   const meal = {
     name: "Chicken Biryani",
     category: "Main Course",
     area: "Indian",
-    image: "images.jpg",
+    image: images,
     ingredients: [
       "Chicken",
       "Rice",
@@ -14,7 +16,7 @@ function MealDetails() {
     ],
     instructions:
       "Wash the rice. Marinate the chicken with spices. Cook the chicken. Add rice and cook until done. Garnish with mint leaves and serve hot.",
-    youtube: "https://www.youtube.com/",
+    youtube: "https://youtu.be/PVO-4Jnjpfk?si=KZ1afShbOpc1TK1i",
   };
 
   const styles = {
@@ -104,3 +106,5 @@ function MealDetails() {
     </div>
   );
 }
+
+export default MealDetails;
